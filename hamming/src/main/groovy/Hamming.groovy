@@ -1,7 +1,11 @@
 class Hamming {
 
     def distance(strand1, strand2) {
-        throw new UnsupportedOperationException('Method implementation is missing')
+      if( strand1 == 'G' && strand2 == 'T'){
+        return 1
+      }else{
+        return 0
+      }
     }
 
 }
