@@ -62,7 +62,6 @@ class HammingSpec extends Specification {
         'AATG'  | 'AAA'
     }
 
-    @Ignore
     def "Disallow second strand longer"() {
         when:
         hamming.distance(strand1, strand2)
