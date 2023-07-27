@@ -50,7 +50,6 @@ class HammingSpec extends Specification {
         'GGACGGATTCTG' | 'AGGACGGATTCT' || 9
     }
 
-    @Ignore
     def "Disallow first strand longer"() {
         when:
         hamming.distance(strand1, strand2)
